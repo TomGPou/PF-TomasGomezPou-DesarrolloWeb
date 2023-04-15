@@ -97,7 +97,9 @@ footer .redes a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top: 20px;
+}
+.list-group{
+    width: auto;
 }
 .list-group-flush .list-group-item{
     background-color: var(--gris);
@@ -118,6 +120,7 @@ footer .redes a:hover{
     filter: grayscale(100%);
     border-radius: 10px;
     position: relative;
+    padding: 0;
 }
 .item h4{
     position: absolute;
@@ -167,9 +170,54 @@ footer .redes a:hover{
     grid-row: 6/7;
 }
 
-/* Main Productos */
+/* FAQ */
+.max-700{
+    max-width: 700px;
+}
+.accordion-body{
+    background-color: var(--amarillo);
+}
+.accordion-button:not(.collapsed) {
+    color: var(--amarillo);
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--verde);
+    outline: 0;
+    box-shadow: 0  0 0.25rem var(--verde);
+}
 
+/* Contacto */
 
+#mensaje{
+    resize: none;
+    height: 150px;
+}
+form .btn{
+    color: var(--verde);
+    border-color: var(--verde);
+}
+form .btn:hover{
+    color: var(--gris);
+    background-color: var(--verde);
+    border: var(--verde);
+}
+.redesContacto div{
+    height: 70px;
+}
+.redesContacto a{
+    color:var(--amarillo);
+    text-decoration: none;
+}
+.redesContacto i{
+    font-size: 3rem;
+    text-shadow: 0 0 10px black;
+    padding-right: 20px;
+}
+.redesContacto i:hover{
+    text-shadow: 0 0 10px;
+    transition: all 1s;
+}
 
 /* Generales */
 :root{
