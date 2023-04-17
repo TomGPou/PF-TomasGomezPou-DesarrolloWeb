@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    /* font-family: 'Alkatra', cursive; */
+    /* font-family: 'David Libre', serif; */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -11,6 +11,9 @@
 /* NAV */
 .navbar{
     box-shadow: 0 0 5px white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 .navbar-toggler{
     box-shadow: 0 0 3px;
@@ -25,7 +28,6 @@
 }
 .navbar-nav .nav-item{
     margin-left: 30px;
-    padding-left: 10px;
     border-radius: 10px;
 }
 .navbar-nav .nav-item:hover{
@@ -88,6 +90,10 @@ footer .redes a:hover{
     flex-wrap: wrap;
     align-items: center;
 }
+.text-box p::first-letter{
+    font-family: 'David Libre', serif;
+    font-size: xx-large;
+}
 #fondo-main{
     width: 100%;
     height: 500px;
@@ -101,7 +107,7 @@ footer .redes a:hover{
 .list-group{
     width: auto;
 }
-.list-group-flush .list-group-item{
+.listaOscura .list-group-item{
     background-color: var(--gris);
     color: var(--amarillo);
 }
@@ -170,6 +176,39 @@ footer .redes a:hover{
     grid-row: 6/7;
 }
 
+/* Productos */
+.itemSinAnimacion{
+    filter: none;
+}
+.itemSinAnimacion:hover{
+    filter: none;
+    transform: none;
+}
+.card{
+    border-color: var(--verde);
+    box-shadow: 0 0 5px white;
+}
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px white, 0 0 10px white;
+    transition: all 1s;
+}
+.card-img-top{
+    height: 230px;
+    object-fit: cover;
+}
+.card .list-group-item{
+    background-color: var(--amarillo);
+    border-color: var(--gris);
+}
+.card-title{
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--verde);
+}
+.card-subtitle{
+    font-weight: bold;
+}
+
 /* FAQ */
 .max-700{
     max-width: 700px;
@@ -185,6 +224,14 @@ footer .redes a:hover{
     border-color: var(--verde);
     outline: 0;
     box-shadow: 0  0 0.25rem var(--verde);
+}
+p a{
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+}
+p a:hover{
+    text-shadow: 0 0 10px var(--verde);
 }
 
 /* Contacto */
@@ -225,6 +272,8 @@ form .btn:hover{
     --gris: #333;
     --amarillo: #ecf1ce;
 }
+.fontDavid{
+    font-family: 'David Libre', serif;}
 html{
     scroll-behavior: smooth;
 }
@@ -233,12 +282,16 @@ body{
 }
 main{
     min-height: 80vh;
+    padding-top: 80px;
 }
 .bg-verde{
     background-color: var(--verde);
 }
 .bg-gris{
     background-color: var(--gris);
+}
+.bg-amarillo{
+    background-color: var(--amarillo);
 }
 .t-verde{
     color: var(--verde);
