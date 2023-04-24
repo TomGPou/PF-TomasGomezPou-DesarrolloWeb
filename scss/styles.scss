@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'David Libre', serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+// UTILITIES
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/utilities";
+
+// COMPONENTS
+@import "components/navbar";
+@import "components/footer";
+@import "components/galeria";
+@import "components/items";
+@import "components/card";
+@import "components/form";
+
+// PAGES
+@import "pages/home";
+@import "pages/faq";
+@import "pages/contacto";
+
+body{
+    background-color: $c-secondary;
+}
+main{
+    min-height: 80vh;
+    padding-top: 80px;
+}
+

@@ -1,0 +1,33 @@
+.max-700{
+    max-width: 700px;
+}
+
+.accordion-body{
+    background-color: $c-tertary;
+}
+
+.accordion-button{
+    &:focus {
+        z-index: 3;
+        border-color: $c-primary;
+        outline: 0;
+        box-shadow: 0  0 0.25rem $c-primary;
+    }
+    &:not(.collapsed) {
+        color: $c-tertary;
+    }
+}
+
+.row{
+    p{
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 0 0 5px black;
+
+            &:hover{
+                text-shadow: 0 0 10px $c-primary;
+            }
+        }
+    }
+}

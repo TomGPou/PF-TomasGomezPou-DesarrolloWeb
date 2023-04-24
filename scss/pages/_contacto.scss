@@ -1,0 +1,21 @@
+.redesContacto{
+    div{
+        height: 70px;
+
+        a{
+            color:$c-tertary;
+            text-decoration: none;
+
+            i{
+                font-size: 3rem;
+                text-shadow: 0 0 10px black;
+                padding-right: 20px;
+
+                &:hover{
+                    text-shadow: 0 0 10px;
+                    transition: all 1s;
+                }
+            }
+        }
+    }
+}

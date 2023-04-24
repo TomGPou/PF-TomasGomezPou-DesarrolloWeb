@@ -1,0 +1,17 @@
+form {
+    .btn{
+    color: $c-primary;
+    border-color: $c-primary;
+
+    &:hover{
+        color: $c-secondary;
+        background-color: $c-primary;
+        border: $c-primary;
+        }
+    }
+}
+
+#mensaje{
+    resize: none;
+    height: 150px;
+}

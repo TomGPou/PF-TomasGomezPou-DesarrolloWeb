@@ -1,0 +1,29 @@
+.card{
+    border-color: $c-primary;
+    box-shadow: 0 0 5px white;
+
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0 0 10px white, 0 0 10px white;
+        transition: all 1s;
+    }
+
+    .card-img-top{
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .list-group-item{
+        background-color: $c-tertary;
+        border-color: $c-secondary;
+    }
+
+    .card-title{
+        font-weight: bold;
+        text-shadow: 0 0 5px $c-primary;
+    }
+
+    .card-subtitle{
+        font-weight: bold;
+    }
+}

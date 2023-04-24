@@ -1,0 +1,30 @@
+.fontDavid{
+    font-family: 'David Libre', serif;
+}
+
+.bg-verde{
+    background-color: $c-primary;
+}
+.bg-gris{
+    background-color: $c-secondary;
+}
+.bg-amarillo{
+    background-color: $c-tertary;
+}
+.t-verde{
+    color: $c-primary;
+}
+.t-gris{
+    color: $c-secondary;
+}
+.t-amarillo{
+    color: $c-tertary;
+}
+
+.titulos{
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $c-tertary;
+}

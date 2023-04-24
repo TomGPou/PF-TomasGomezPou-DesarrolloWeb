@@ -1,0 +1,35 @@
+footer{
+    .navbar-brand{
+        img{
+            width: auto;
+            height: 70px;
+        }
+    }
+
+    p{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    
+    .redes{
+        font-size: 1em;
+        margin-right: 5px;
+
+        a{
+            color: $c-secondary;
+            padding: 2px;
+
+            &:hover{
+                color: $c-tertary;
+                transition: all 0.3s;
+            }
+        }
+    }
+} 
+
+// MEDIA QUERIES
+@media only screen and (min-width:424px) {
+    footer .redes{
+        font-size: 2em;
+    }
+}

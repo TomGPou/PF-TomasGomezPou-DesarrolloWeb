@@ -1,0 +1,36 @@
+.navbar{
+    box-shadow: 0 0 5px white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    .navbar-toggler{
+        box-shadow: 0 0 3px;
+    }
+    .navbar-brand{
+        img{
+            width: auto;
+            height: 70px;
+        }
+    } 
+}
+.navbar-nav{
+    .nav-link{
+        color: $c-secondary;
+        font-weight: bold;
+    }
+    .nav-item{
+        margin-left: 30px;
+        border-radius: 10px;
+        &:hover{
+            background-color: $c-secondary;
+            color: $c-primary;
+            border-radius: 10px;
+        }
+        a:hover{
+            color: $c-primary;
+        }
+        .dropdown-menu a:hover{
+            background-color: $c-secondary;
+        }
+    }
+}

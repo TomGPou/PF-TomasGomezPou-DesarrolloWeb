@@ -1,0 +1,127 @@
+.galeria{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 15px;
+}
+
+.item1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.item2{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.item3{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.item4{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.item5{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+.item6{
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+// MEDIA QUERIES
+@media only screen and (min-width:424px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 200px);
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .item3{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .item4{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .item5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .item6{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+}
+@media only screen and (min-width:768px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    .item1{
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+    .item2{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    .item3{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item4{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+    .item5{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .item6{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .item1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .item3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item4{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .item5{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .item6{
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+}
