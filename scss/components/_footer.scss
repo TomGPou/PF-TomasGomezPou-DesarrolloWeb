@@ -1,4 +1,6 @@
 footer{
+    background-color: $c-primary;
+    
     .navbar-brand{
         img{
             width: auto;
@@ -7,29 +9,27 @@ footer{
     }
 
     p{
-        font-size: 12px;
+        font-size: 0.7em;
         margin-bottom: 0;
     }
     
     .redes{
         font-size: 1em;
-        margin-right: 5px;
+        margin-right: 0.5em;
 
         a{
             color: $c-secondary;
             padding: 2px;
 
             &:hover{
-                color: $c-tertary;
-                transition: all 0.3s;
+                @include shine;
             }
         }
+
+        @media only screen and (min-width:424px) {
+            font-size: 2em;
+        }
+        
+        
     }
 } 
-
-// MEDIA QUERIES
-@media only screen and (min-width:424px) {
-    footer .redes{
-        font-size: 2em;
-    }
-}

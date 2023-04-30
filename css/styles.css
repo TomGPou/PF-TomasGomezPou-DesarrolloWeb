@@ -40,21 +40,55 @@ html {
 }
 
 .titulos {
-  text-transform: uppercase;
-  text-shadow: 0 0 5px black, 0 0 5px black;
-  padding-left: 15px;
-  padding-right: 15px;
   color: #ecf1ce;
+  background-color: none;
+  border: 0 solid none;
+}
+.titulos h1 {
+  font-size: 1.5em;
+  font-family: "David Libre", serif;
+  text-shadow: 0 0 5px black;
+  text-transform: uppercase;
+}
+.titulos h2 {
+  font-size: 1.2em;
+  font-family: "David Libre", serif;
+  text-shadow: 0 0 5px black;
+  text-transform: uppercase;
+}
+.titulos h3 {
+  font-size: 1em;
+  text-shadow: 0 0 10px black;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .titulos h1 {
+    font-size: 2em;
+    font-family: "David Libre", serif;
+    text-shadow: 0 0 5px black;
+    text-transform: uppercase;
+  }
+  .titulos h2 {
+    font-size: 1.7em;
+    font-family: "David Libre", serif;
+    text-shadow: 0 0 5px black;
+    text-transform: uppercase;
+  }
+  .titulos h3 {
+    font-size: 1.5em;
+    text-shadow: 0 0 10px black;
+    text-transform: uppercase;
+  }
 }
 
 .navbar {
+  color: #333;
+  background-color: #62ff8e;
+  border: 0 solid none;
   box-shadow: 0 0 5px white;
   position: fixed;
   width: 100%;
-  z-index: 2;
-}
-.navbar .navbar-toggler {
-  box-shadow: 0 0 3px;
+  z-index: 3;
 }
 .navbar .navbar-brand img {
   width: auto;
@@ -70,28 +104,37 @@ html {
   border-radius: 10px;
 }
 .navbar-nav .nav-item:hover {
-  background-color: #333;
   color: #62ff8e;
+  background-color: #333;
+  border: 0 solid none;
   border-radius: 10px;
 }
 .navbar-nav .nav-item a:hover {
   color: #62ff8e;
 }
+.navbar-nav .nav-item .dropdown-menu a {
+  color: #ecf1ce;
+}
 .navbar-nav .nav-item .dropdown-menu a:hover {
+  color: #62ff8e;
   background-color: #333;
+  border: 0 solid none;
 }
 
+footer {
+  background-color: #62ff8e;
+}
 footer .navbar-brand img {
   width: auto;
   height: 70px;
 }
 footer p {
-  font-size: 12px;
+  font-size: 0.7em;
   margin-bottom: 0;
 }
 footer .redes {
   font-size: 1em;
-  margin-right: 5px;
+  margin-right: 0.5em;
 }
 footer .redes a {
   color: #333;
@@ -99,14 +142,15 @@ footer .redes a {
 }
 footer .redes a:hover {
   color: #ecf1ce;
-  transition: all 0.3s;
+  text-shadow: 0 0 10px #ecf1ce;
+  transition: all 1s;
 }
-
 @media only screen and (min-width: 424px) {
   footer .redes {
     font-size: 2em;
   }
 }
+
 .galeria {
   width: 100%;
   padding: 20px;
@@ -237,14 +281,15 @@ footer .redes a:hover {
   }
 }
 .item {
-  background-color: #333;
+  color: #ecf1ce;
+  background-color: none;
   border: 2px solid #ecf1ce;
   filter: grayscale(100%);
   border-radius: 10px;
   position: relative;
   padding: 0;
 }
-.item h4 {
+.item h3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -264,6 +309,7 @@ footer .redes a:hover {
 }
 .item:hover {
   filter: grayscale(0%);
+  box-shadow: 0 0 5px #ecf1ce;
   transform: scale(1.02);
   transition: all 1s;
 }
@@ -276,13 +322,17 @@ footer .redes a:hover {
 }
 
 .card {
-  border-color: #62ff8e;
+  color: #333;
+  background-color: #ecf1ce;
+  border: 2px solid #62ff8e;
   box-shadow: 0 0 5px white;
 }
 .card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 10px white, 0 0 10px white;
+  filter: grayscale(0%);
+  box-shadow: 0 0 5px #ecf1ce;
+  transform: scale(1.02);
   transition: all 1s;
+  box-shadow: 0 0 10px white, 0 0 10px white;
 }
 .card .card-img-top {
   height: 230px;
@@ -295,19 +345,26 @@ footer .redes a:hover {
 .card .card-title {
   font-weight: bold;
   text-shadow: 0 0 5px #62ff8e;
+  font-size: 1.2em;
 }
 .card .card-subtitle {
   font-weight: bold;
+  font-size: 1em;
 }
 
+form .form-floating input:focus, form .form-floating textarea:focus {
+  box-shadow: 0 0 8px #62ff8e;
+}
 form .btn {
   color: #62ff8e;
-  border-color: #62ff8e;
+  background-color: none;
+  border: 1px solid #62ff8e;
 }
 form .btn:hover {
   color: #333;
   background-color: #62ff8e;
-  border: #62ff8e;
+  border: 1px solid #62ff8e;
+  background-image: linear-gradient(to right, #62ff8e, #ecf1ce);
 }
 
 #mensaje {
@@ -336,6 +393,13 @@ form .btn:hover {
   border: #333 solid 2px;
   border-radius: 10px;
   box-shadow: 0 0 5px black;
+  background-color: rgba(98, 255, 142, 0.4039215686);
+}
+@media only screen and (min-width: 768px) {
+  .banner {
+    width: 44%;
+    margin-left: 3%;
+  }
 }
 
 .text-box {
@@ -343,6 +407,9 @@ form .btn:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  color: #ecf1ce;
+  background-color: none;
+  border: 0 solid none;
 }
 .text-box p::first-letter {
   font-family: "David Libre", serif;
@@ -359,43 +426,46 @@ form .btn:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+@media only screen and (min-width: 768px) {
+  #fondo-main {
+    background-size: 200% auto;
+  }
+}
 
 .list-group {
   width: auto;
 }
 
 .listaOscura .list-group-item {
-  background-color: #333;
   color: #ecf1ce;
+  background-color: #333;
+  border: 0 solid none;
 }
 
-@media only screen and (min-width: 768px) {
-  .banner {
-    width: 44%;
-    margin-left: 3%;
-  }
-  #fondo-main {
-    background-size: 200% auto;
-  }
-}
 .max-700 {
   max-width: 700px;
+}
+
+.accordion-header .accordion-button {
+  color: #ecf1ce;
+}
+.accordion-header .accordion-button:focus {
+  z-index: 3;
+  border-color: #62ff8e;
+  outline: 0;
+  box-shadow: 0 0 0.25rem #62ff8e;
+}
+.accordion-header .accordion-button:not(.collapsed) {
+  color: #ecf1ce;
 }
 
 .accordion-body {
   background-color: #ecf1ce;
 }
 
-.accordion-button:focus {
-  z-index: 3;
-  border-color: #62ff8e;
-  outline: 0;
-  box-shadow: 0 0 0.25rem #62ff8e;
-}
-.accordion-button:not(.collapsed) {
+.row p {
   color: #ecf1ce;
 }
-
 .row p a {
   text-decoration: none;
   font-weight: bold;
@@ -418,7 +488,8 @@ form .btn:hover {
   padding-right: 20px;
 }
 .redesContacto div a i:hover {
-  text-shadow: 0 0 10px;
+  color: #ecf1ce;
+  text-shadow: 0 0 10px #ecf1ce;
   transition: all 1s;
 }
 

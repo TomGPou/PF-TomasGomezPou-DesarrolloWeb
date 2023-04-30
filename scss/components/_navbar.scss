@@ -1,11 +1,11 @@
 .navbar{
+    @include colors ($c-secondary,$c-primary,0,none);
+
     box-shadow: 0 0 5px white;
     position: fixed;
     width: 100%;
-    z-index: 2;
-    .navbar-toggler{
-        box-shadow: 0 0 3px;
-    }
+    z-index: 3;
+
     .navbar-brand{
         img{
             width: auto;
@@ -22,15 +22,18 @@
         margin-left: 30px;
         border-radius: 10px;
         &:hover{
-            background-color: $c-secondary;
-            color: $c-primary;
+            @include colors ($c-primary,$c-secondary,0,none);
             border-radius: 10px;
         }
         a:hover{
             color: $c-primary;
         }
+
+        .dropdown-menu a{
+            color: $c-tertary;
+        }
         .dropdown-menu a:hover{
-            background-color: $c-secondary;
+            @include colors ($c-primary,$c-secondary,0,none);
         }
     }
 }

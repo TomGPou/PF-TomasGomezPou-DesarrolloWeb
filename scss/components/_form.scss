@@ -1,12 +1,14 @@
 form {
+    .form-floating input:focus,.form-floating textarea:focus{
+        box-shadow: 0 0 8px $c-primary
+    }
+
     .btn{
-    color: $c-primary;
-    border-color: $c-primary;
+        @include colors ($c-primary,none,1px,$c-primary);
 
     &:hover{
-        color: $c-secondary;
-        background-color: $c-primary;
-        border: $c-primary;
+        @include colors ($c-secondary,$c-primary,1px,$c-primary);
+        background-image: linear-gradient(to right, #62ff8e,#ecf1ce);
         }
     }
 }

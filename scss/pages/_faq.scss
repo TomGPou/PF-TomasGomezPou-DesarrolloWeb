@@ -2,24 +2,31 @@
     max-width: 700px;
 }
 
+.accordion-header{
+    .accordion-button{
+        color: $c-tertary;
+
+        &:focus {
+            z-index: 3;
+            border-color: $c-primary;
+            outline: 0;
+            box-shadow: 0  0 0.25rem $c-primary;
+        }
+        &:not(.collapsed) {
+            color: $c-tertary;
+        }
+    }
+}
 .accordion-body{
     background-color: $c-tertary;
 }
 
-.accordion-button{
-    &:focus {
-        z-index: 3;
-        border-color: $c-primary;
-        outline: 0;
-        box-shadow: 0  0 0.25rem $c-primary;
-    }
-    &:not(.collapsed) {
-        color: $c-tertary;
-    }
-}
+
 
 .row{
     p{
+        color: $c-tertary;
+
         a{
             text-decoration: none;
             font-weight: bold;

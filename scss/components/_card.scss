@@ -1,11 +1,10 @@
 .card{
-    border-color: $c-primary;
+    @include colors ($c-secondary,$c-tertary,2px,$c-primary);
     box-shadow: 0 0 5px white;
 
     &:hover{
-        transform: scale(1.03);
+        @include animacionScale;
         box-shadow: 0 0 10px white, 0 0 10px white;
-        transition: all 1s;
     }
 
     .card-img-top{
@@ -21,9 +20,11 @@
     .card-title{
         font-weight: bold;
         text-shadow: 0 0 5px $c-primary;
+        font-size: 1.2em;
     }
 
     .card-subtitle{
         font-weight: bold;
+        font-size: 1em;
     }
 }
