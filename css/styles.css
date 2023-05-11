@@ -398,7 +398,6 @@ form .btn:hover {
 @media only screen and (min-width: 768px) {
   .banner {
     width: 44%;
-    margin-left: 3%;
   }
 }
 
@@ -417,7 +416,7 @@ form .btn:hover {
 }
 
 #fondo-main {
-  width: 100%;
+  width: auto;
   height: 500px;
   background-color: #333;
   background-image: url(../img/main1.jpg);
